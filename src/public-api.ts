@@ -1,11 +1,8 @@
-export * from "./common/array";
-export * from "./common/date";
-export * from "./common/fuse";
-export * from "./common/number";
-export * from "./common/object";
-export * from "./common/types";
-export * from "./services/cache.type";
-export * from "./utils/debounce";
-export * from "./utils/icon";
-export * from "./utils/rxjs.util";
-export * from "./utils/style.util";
+
+export * from "./prototypes/string/capitalize";
+export * from "./prototypes/number/keep-bound";
+export * from "./prototypes/array/join-non-null";
+export * from "./prototypes/date/to-iso-string-date";
+export * from "./utils";
+export * from "./types";
+

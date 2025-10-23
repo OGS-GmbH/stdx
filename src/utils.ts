@@ -1,3 +1,41 @@
+
+export function parseMapToObject (map: Map<unknown, unknown>): object | undefined {
+  // eslint-disable-next-line @tseslint/no-unsafe-assignment
+  const obj: object | undefined = Object.fromEntries(map);
+
+  return obj && Object.keys(obj).length > 0 ? obj : undefined;
+}
+export function roundWithThreshold (value: number, threshold: number): number {
+  const integerPart: number = Math.floor(value);
+  const fraction: number = value - integerPart;
+
+  return fraction >= threshold
+    ? Math.ceil(value)
+    : integerPart;
+}
+export function intoNumber (value: unknown): number | null {
+  if (typeof value === "number")
+    return Number.isFinite(value) ? value : null;
+
+
+  if (typeof value === "bigint") {
+    const n: number = Number(value);
+
+    return Number.isSafeInteger(n) ? n : null;
+  }
+
+  if (typeof value === "string") {
+    const s: string = value.trim();
+
+    if (s === "") return null;
+
+    const n: number = Number(s);
+
+    return Number.isFinite(n) ? n : null;
+  }
+
+  return null;
+}
 export function hasKeys<T extends object> (objectToCheck: T, ...keys: ReadonlyArray<keyof T>): objectToCheck is PickFromKeys<T, typeof keys> {
   let _hasKeys: boolean = true;
 
@@ -31,6 +69,30 @@ export type DeepNormalized<T> = (
             ? T | null
             : T
   );
+export type PickFromKeys<O, K extends ReadonlyArray<keyof O>> = {
+  [P in K[number]]: O[P];
+};
+export type NonPartial<T> = {
+  [K in keyof T]: Exclude<T[K], undefined>;
+};
+export type DeepNullableObject<T extends object> = {
+  [K in keyof T]: DeepNullable<T[K]>;
+};
+export type DeepNullableArray<T extends unknown[]> = T extends Array<infer U> ? Array<DeepNullable<U>> : T;
+export type DeepNullable<T> = T extends object
+  ? DeepNullableObject<T>
+  : T extends unknown[]
+    ? DeepNullableArray<T>
+    : T | null;
+export type NullableObject<T extends object> = {
+  [K in keyof T]: T[K] | null;
+};
+export type NullableArray<T extends unknown[]> = T extends Array<infer U> ? Array<U | null> : T;
+export type Nullable<T> = T extends object
+  ? NullableObject<T>
+  : T extends unknown[]
+    ? NullableArray<T>
+    : T | null;
 export function normalizeString (data: string): string | null {
   const trimmedData: string = data.trim();
 
@@ -89,27 +151,4 @@ export function deepNormalize<T> (data: T): DeepNormalized<T> {
     }
   }
 }
-export type PickFromKeys<O, K extends ReadonlyArray<keyof O>> = {
-  [P in K[number]]: O[P];
-};
-export type NonPartial<T> = {
-  [K in keyof T]: Exclude<T[K], undefined>;
-};
-export type DeepNullableObject<T extends object> = {
-  [K in keyof T]: DeepNullable<T[K]>;
-};
-export type DeepNullableArray<T extends unknown[]> = T extends Array<infer U> ? Array<DeepNullable<U>> : T;
-export type DeepNullable<T> = T extends object
-  ? DeepNullableObject<T>
-  : T extends unknown[]
-    ? DeepNullableArray<T>
-    : T | null;
-export type NullableObject<T extends object> = {
-  [K in keyof T]: T[K] | null;
-};
-export type NullableArray<T extends unknown[]> = T extends Array<infer U> ? Array<U | null> : T;
-export type Nullable<T> = T extends object
-  ? NullableObject<T>
-  : T extends unknown[]
-    ? NullableArray<T>
-    : T | null;
+

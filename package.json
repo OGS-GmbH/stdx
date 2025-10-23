@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Centralize common logic and patterns used across TypeScript projects—improving consistency, reducing duplication, and ensuring strong type safety",
   "keywords": ["Utility functions", "Common type definitions", "Generic helpers", "Functional programming helpers", "Lightweight", "Dependency-free design", "Fully typed", "optimized for TypeScript's strict mode"],
-  "homepage": "https://github.com/OGS-GmbH/stdx?tab=readme-ov-file",
+  "homepage": "https://github.com/OGS-GmbH/stdx",
   "bugs": "https://github.com/OGS-GmbH/stdx/issues",
   "license": "MIT",
   "author": "OGS GmbH",
@@ -16,6 +16,10 @@
     {
       "name": "Elie Soueid",
       "email": "eliegebransoued@gmail.com"
+    },
+    {
+      "name": "Ian Wenneckers",
+      "email": "iwenneck@gmail.com"
     }
   ],
   "repository": {
@@ -23,12 +27,12 @@
     "url": "https://github.com/OGS-GmbH/stdx"
   },
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./stdx/public-api.d.ts",
-      "default": "./stdx/public-api.mjs"
-    }
-  },
+"exports": {
+  ".": {
+    "types": "./public-api.d.ts",
+    "default": "./public-api.mjs"
+  }
+},
   "scripts": {
     "ci:build:main:production": "node .esbuild/prod.mjs",
     "ci:pr:commitlint:main:commitlint": "commitlint",
@@ -65,7 +69,7 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.34.0"
   },
-  "sideEffects": false,
+  "sideEffects": true,
   "publishConfig": {
     "directory": "dist/prod"
   }
