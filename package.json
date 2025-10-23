@@ -1,8 +1,17 @@
 {
   "name": "@ogs-gmbh/stdx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Centralize common logic and patterns used across TypeScript projects—improving consistency, reducing duplication, and ensuring strong type safety",
-  "keywords": ["Utility functions", "Common type definitions", "Generic helpers", "Functional programming helpers", "Lightweight", "Dependency-free design", "Fully typed", "optimized for TypeScript's strict mode"],
+  "keywords": [
+    "Utility functions",
+    "Common type definitions",
+    "Generic helpers",
+    "Functional programming helpers",
+    "Lightweight",
+    "Dependency-free design",
+    "Fully typed",
+    "optimized for TypeScript's strict mode"
+  ],
   "homepage": "https://github.com/OGS-GmbH/stdx",
   "bugs": "https://github.com/OGS-GmbH/stdx/issues",
   "license": "MIT",
@@ -27,20 +36,18 @@
     "url": "https://github.com/OGS-GmbH/stdx"
   },
   "type": "module",
-"exports": {
-  ".": {
-    "types": "./public-api.d.ts",
-    "default": "./public-api.mjs"
-  }
-},
+  "exports": {
+    ".": {
+      "types": "./public-api.d.ts",
+      "default": "./public-api.mjs"
+    }
+  },
   "scripts": {
     "ci:build:main:production": "node .esbuild/prod.mjs",
     "ci:pr:commitlint:main:commitlint": "commitlint",
     "ci:pr:lint:main:eslint": "eslint .",
     "commitizen": "cz"
   },
-
-
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
