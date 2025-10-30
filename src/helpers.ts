@@ -27,7 +27,7 @@ export function deepNormalize<T> (data: T): DeepNormalized<T> {
     return undefined as DeepNormalized<T>;
 
   if (Array.isArray(data))
-    return (data as T[]).deepNormalize() as DeepNormalized<T>;
+    return deepNormalizeArray(data) as DeepNormalized<T>;
 
   const typeofData: "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function" = typeof data;
 

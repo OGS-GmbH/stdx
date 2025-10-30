@@ -24,7 +24,7 @@ Object.defineProperty(Object, "hasKeys", {
 declare global {
   interface ObjectConstructor {
     // eslint-disable-next-line @tseslint/method-signature-style
-    hasKeys<T extends object>(ObjectToCheck: T, keys: ReadonlyArray<keyof T >): this is PickFromKeys<T, typeof keys>;
+    hasKeys<T extends object>(ObjectToCheck: T, ...keys: ReadonlyArray<keyof T >): this is PickFromKeys<T, typeof keys>;
   }
 }
 

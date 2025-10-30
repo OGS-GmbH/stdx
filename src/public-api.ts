@@ -1,5 +1,4 @@
 export * from "./prototypes/array/join-non-null";
-export * from "./prototypes/array/deep-normalize-array";
 export * from "./prototypes/date/to-iso-string-date";
 export * from "./prototypes/map/parse-map-to-object";
 export * from "./prototypes/number/keep-bound";
