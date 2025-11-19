@@ -1,6 +1,6 @@
 {
   "name": "@ogs-gmbh/stdx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Centralize common logic and patterns used across TypeScript projects — improving consistency, reducing duplication, and ensuring strong type safety",
   "keywords": [
     "standard-library",
