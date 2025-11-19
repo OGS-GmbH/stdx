@@ -51,7 +51,7 @@
   },
   "type": "module",
   "scripts": {
-    "ci:build:main:production": "node .esbuild/prod.mjs",
+    "ci:build:main:production": "node .esbuild/build.mjs",
     "ci:pr:commitlint:main:commitlint": "commitlint",
     "ci:pr:lint:main:eslint": "eslint .",
     "commitizen": "cz",
@@ -87,6 +87,6 @@
   },
   "sideEffects": true,
   "publishConfig": {
-    "directory": "dist/prod"
+    "directory": "dist"
   }
 }

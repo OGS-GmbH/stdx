@@ -7,7 +7,7 @@
 		"moduleResolution": "bundler",
     "lib": ["ES2023", "DOM"],
     "sourceMap": true,
-    "outDir": "./dist/tsc",
+    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
