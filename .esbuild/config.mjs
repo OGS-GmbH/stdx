@@ -19,11 +19,16 @@ const getConfig = (pathToDist) => ({
   plugins: [
     esbuildPluginFilePathExtensions({ esm: true }),
     packageJsonPlugin(),
+    dts(),
     fileCopyPlugin({
       inputs: [
         {
           from: "README.md",
           to: `${ pathToDist }/README.md`
+        },
+        {
+          from: "LICENSE",
+          to: `${ pathToDist }/LICENSE`
         },
         {
           from: "CHANGELOG.md",
@@ -36,10 +41,6 @@ const getConfig = (pathToDist) => ({
           to: pathToDist
         }
       ]
-    }),
-    dts({
-      tsconfig: "tsconfig.build.json"
-
     })
   ]
 });
