@@ -57,4 +57,3 @@ export type Nullable<T> = T extends object
   : T extends unknown[]
     ? NullableArray<T>
     : T | null;
-export type IntoNumberArg = string | bigint | null | undefined;

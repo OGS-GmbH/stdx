@@ -1,15 +1,24 @@
 {
+  "include": ["./src/**/*.ts"],
   "compilerOptions": {
-    "target": "ES2023",
-    "module": "CommonJS",
+    "baseUrl": ".",
+    "module": "esnext",
+		"target": "esnext",
+		"moduleResolution": "bundler",
     "lib": ["ES2023", "DOM"],
     "sourceMap": true,
-    "inlineSources": true,
-    "outDir": "./dist",
+    "outDir": "./dist/tsc",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noImplicitOverride": true,
+		"noUncheckedIndexedAccess": true,
+    "allowSyntheticDefaultImports": true
   }
 }
