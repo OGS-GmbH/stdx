@@ -24,8 +24,8 @@ importers:
         specifier: ^6.6.0
         version: 6.6.0
       '@ogs-gmbh/linter':
-        specifier: ^1.5.0
-        version: 1.5.0(@commitlint/cli@19.8.1(@types/node@24.10.1)(typescript@5.8.3))(@commitlint/config-conventional@19.8.1)(@eslint/js@9.39.1)(@eslint/json@0.6.0)(@eslint/markdown@6.6.0)(@stylistic/eslint-plugin-js@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-plus@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-ts@2.13.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))(eslint-plugin-unicorn@56.0.1(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(globals@15.15.0)(husky@9.1.7)(lint-staged@15.5.2)(npm-package-json-lint@8.0.0(typescript@5.8.3))(typescript-eslint@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))
+        specifier: ^1.5.1
+        version: 1.5.1(@commitlint/cli@19.8.1(@types/node@24.10.1)(typescript@5.8.3))(@commitlint/config-conventional@19.8.1)(@eslint/js@9.39.1)(@eslint/json@0.6.0)(@eslint/markdown@6.6.0)(@stylistic/eslint-plugin-js@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-plus@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-ts@2.13.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))(eslint-plugin-unicorn@56.0.1(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(globals@15.15.0)(husky@9.1.7)(lint-staged@15.5.2)(npm-package-json-lint@8.0.0(typescript@5.8.3))(typescript-eslint@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))
       '@stylistic/eslint-plugin-js':
         specifier: ^2.13.0
         version: 2.13.0(eslint@9.39.1(jiti@2.6.1))
@@ -457,8 +457,8 @@ packages:
     resolution: {integrity: sha512-xhfYPXoV5Dy4UkY0D+v2KkwvnDfiA/8Mt3sWCGI/hM03NsYIH8ZaG6QzS9x7pje5vHZBZJ2v6VRFVTWACnqcmQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  '@ogs-gmbh/linter@1.5.0':
-    resolution: {integrity: sha512-CVVb8g1YECpHppx7z4HCbtn+tyDcJJSdbaIz/aBkg08tTWPCny2k2bS93zHHrt/lHDsj2NF4gFDuQKr2jrsBeQ==}
+  '@ogs-gmbh/linter@1.5.1':
+    resolution: {integrity: sha512-eac6D7eS8Kc2zJoyRFn6wx5jSwyUTiETEg7b4tt7sQ6gw4YA1GXpEZfQfa0m8iGlXBM+vfc+8QTKZeZhxmxdow==}
     peerDependencies:
       '@commitlint/cli': ^19
       '@commitlint/config-conventional': ^19
@@ -760,8 +760,8 @@ packages:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001755:
-    resolution: {integrity: sha512-44V+Jm6ctPj7R52Na4TLi3Zri4dWUljJd+RDm+j8LtNCc/ihLCT+X1TzoOAkRETEWqjuLnh9581Tl80FvK7jVA==}
+  caniuse-lite@1.0.30001756:
+    resolution: {integrity: sha512-4HnCNKbMLkLdhJz3TToeVWHSnfJvPaq6vu/eRP0Ahub/07n484XHhBF5AJoSGHdVrS8tKFauUQz8Bp9P7LVx7A==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -867,8 +867,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  core-js-compat@3.46.0:
-    resolution: {integrity: sha512-p9hObIIEENxSV8xIu+V68JjSeARg6UVMG5mR+JEUguG3sI6MsiS1njz2jHmyJDvA+8jX/sytkBHup6kxhM9law==}
+  core-js-compat@3.47.0:
+    resolution: {integrity: sha512-IGfuznZ/n7Kp9+nypamBhvwdwLsW6KC8IOaURw2doAK5e98AG3acVLdh0woOnEqCfUtS+Vu882JE4k/DAm3ItQ==}
 
   cosmiconfig-typescript-loader@6.2.0:
     resolution: {integrity: sha512-GEN39v7TgdxgIoNcdkRE3uiAzQt3UXLyHbRHD6YoL048XAeOomyxaP+Hh/+2C6C2wYjxJ2onhJcsQp+L4YEkVQ==}
@@ -968,8 +968,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.255:
-    resolution: {integrity: sha512-Z9oIp4HrFF/cZkDPMpz2XSuVpc1THDpT4dlmATFlJUIBVCy9Vap5/rIXsASP1CscBacBqhabwh8vLctqBwEerQ==}
+  electron-to-chromium@1.5.256:
+    resolution: {integrity: sha512-uqYq1IQhpXXLX+HgiXdyOZml7spy4xfy42yPxcCCRjswp0fYM2X+JwCON07lqnpLEGVCj739B7Yr+FngmHBMEQ==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -2715,7 +2715,7 @@ snapshots:
     dependencies:
       which: 4.0.0
 
-  '@ogs-gmbh/linter@1.5.0(@commitlint/cli@19.8.1(@types/node@24.10.1)(typescript@5.8.3))(@commitlint/config-conventional@19.8.1)(@eslint/js@9.39.1)(@eslint/json@0.6.0)(@eslint/markdown@6.6.0)(@stylistic/eslint-plugin-js@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-plus@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-ts@2.13.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))(eslint-plugin-unicorn@56.0.1(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(globals@15.15.0)(husky@9.1.7)(lint-staged@15.5.2)(npm-package-json-lint@8.0.0(typescript@5.8.3))(typescript-eslint@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))':
+  '@ogs-gmbh/linter@1.5.1(@commitlint/cli@19.8.1(@types/node@24.10.1)(typescript@5.8.3))(@commitlint/config-conventional@19.8.1)(@eslint/js@9.39.1)(@eslint/json@0.6.0)(@eslint/markdown@6.6.0)(@stylistic/eslint-plugin-js@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-plus@2.13.0(eslint@9.39.1(jiti@2.6.1)))(@stylistic/eslint-plugin-ts@2.13.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))(eslint-plugin-unicorn@56.0.1(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(globals@15.15.0)(husky@9.1.7)(lint-staged@15.5.2)(npm-package-json-lint@8.0.0(typescript@5.8.3))(typescript-eslint@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.8.3))':
     optionalDependencies:
       '@commitlint/cli': 19.8.1(@types/node@24.10.1)(typescript@5.8.3)
       '@commitlint/config-conventional': 19.8.1
@@ -2975,8 +2975,8 @@ snapshots:
   browserslist@4.28.0:
     dependencies:
       baseline-browser-mapping: 2.8.29
-      caniuse-lite: 1.0.30001755
-      electron-to-chromium: 1.5.255
+      caniuse-lite: 1.0.30001756
+      electron-to-chromium: 1.5.256
       node-releases: 2.0.27
       update-browserslist-db: 1.1.4(browserslist@4.28.0)
 
@@ -2999,7 +2999,7 @@ snapshots:
 
   camelcase@5.3.1: {}
 
-  caniuse-lite@1.0.30001755: {}
+  caniuse-lite@1.0.30001756: {}
 
   ccount@2.0.1: {}
 
@@ -3111,7 +3111,7 @@ snapshots:
       meow: 12.1.1
       split2: 4.2.0
 
-  core-js-compat@3.46.0:
+  core-js-compat@3.47.0:
     dependencies:
       browserslist: 4.28.0
 
@@ -3210,7 +3210,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.255: {}
+  electron-to-chromium@1.5.256: {}
 
   emoji-regex@10.6.0: {}
 
@@ -3293,7 +3293,7 @@ snapshots:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.1(jiti@2.6.1))
       ci-info: 4.3.1
       clean-regexp: 1.0.0
-      core-js-compat: 3.46.0
+      core-js-compat: 3.47.0
       eslint: 9.39.1(jiti@2.6.1)
       esquery: 1.6.0
       globals: 15.15.0
