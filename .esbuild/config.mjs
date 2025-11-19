@@ -27,6 +27,10 @@ const getConfig = (pathToDist) => ({
           to: `${ pathToDist }/README.md`
         },
         {
+          from: "LICENSE",
+          to: `${ pathToDist }/LICENSE`
+        },
+        {
           from: "CHANGELOG.md",
           to: `${ pathToDist }/CHANGELOG.md`
         }
