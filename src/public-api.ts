@@ -17,7 +17,13 @@ declare global {
   }
 
   interface Date {
-    toISOStringDate(): string;
+    /**
+     * Returns the date in ISO-8601 format (`YYYY-MM-DD`).
+     *
+     * @param isLocal Indicates whether the date should be returned in local time.
+     *                If omitted, the date is returned in UTC.
+     */
+    toISOStringDate(isLocal?: boolean): string;
   }
 
   interface Map<K, V> {
