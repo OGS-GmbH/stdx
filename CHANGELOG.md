@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/OGS-GmbH/stdx/compare/v1.0.0...v1.1.0) (2025-11-26)
+
+
+### Features
+
+* **date:** add ability to parse into local iso ([#4](https://github.com/OGS-GmbH/stdx/issues/4)) ([abf99a0](https://github.com/OGS-GmbH/stdx/commit/abf99a0e7ad271d8783815d4fb50e7f523a4522b))
+
 ## 1.0.0 (2025-11-19)
 
 
