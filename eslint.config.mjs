@@ -35,7 +35,9 @@ export default defineConfig(
       "node_modules",
       "dist",
       "CHANGELOG.md",
-      "README.md"
+      "README.md",
+      ".docs",
+      "CODE_OF_CONDUCT.md"
     ]
   },
   {

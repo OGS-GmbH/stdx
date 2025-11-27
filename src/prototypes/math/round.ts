@@ -1,3 +1,15 @@
+/**
+ * @module Math
+ */
+
+
+/**
+ * Rounds a number to the nearest integer using a custom fractional threshold instead of the standard 0.5.
+ * @param value The number to round.
+ * @param threshold  The fractional threshold at which rounding switches from floor to ceil.Typically between 0 and 1.
+ * @returns The rounded integer result according to the provided threshold.
+ */
+
 function roundWithThreshold (value: number, threshold: number): number {
   const integerPart: number = Math.floor(value);
   const fraction: number = value - integerPart;
