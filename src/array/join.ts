@@ -7,8 +7,10 @@
  * @param this Array of values
  * @param separator The string to insert between array elements
  * @returns A string with all non-nullish array elements joined by the separator.
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
  */
-
 function nonNullishJoin (this: readonly unknown[], separator: string): string {
   let joined: string = "";
 

@@ -1,3 +1,7 @@
+/**
+ * @module Types
+ */
+
 export type UnionToIntersection<U> =
   (U extends unknown ? (k: U) => void : never) extends (k: infer I) => void
     ? I
@@ -33,6 +37,10 @@ export type DeepNormalized<T> = (
             ? T | null
             : T
   );
+/**
+ * Pick properties from an object O based on an array of keys K.
+ * @typeParam O - The object type to pick properties from.
+ */
 export type PickFromKeys<O, K extends ReadonlyArray<keyof O>> = {
   [P in K[number]]: O[P];
 };

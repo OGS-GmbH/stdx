@@ -1,3 +1,16 @@
+/**
+ * @module Date
+ */
+
+/**
+ * Converts a Date object to an ISO 8601 date string (YYYY-MM-DD).
+ * @param this The Date object to convert.
+ * @param [isLocal=false] If true, uses local time; otherwise, uses UTC time.
+ * @return The ISO 8601 date string.
+ *
+ * @since 1.1.0
+ * @author Ian Wenneckers
+ */
 function toISOStringDate (this: Date, isLocal: boolean = false): string {
   if (isLocal) {
     return `${ this.getFullYear() }-${ (this.getMonth() + 1).toString().padStart(2, "0") }-${ this.getDate().toString()

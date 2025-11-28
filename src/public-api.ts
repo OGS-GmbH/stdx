@@ -1,11 +1,11 @@
-import "./prototypes/array/join";
-import "./prototypes/date/iso-date";
-import "./prototypes/map/to-object";
-import "./prototypes/math/round";
-import "./prototypes/number/bounds";
-import "./prototypes/number/into";
-import "./prototypes/object/has-keys";
-import "./prototypes/string/capitalize";
+import "./array/join";
+import "./date/iso-date";
+import "./map/to-object";
+import "./math/round";
+import "./number/bounds";
+import "./number/into";
+import "./object/has-keys";
+import "./string/capitalize";
 import { PickFromKeys } from "./types";
 
 /* eslint-disable @tseslint/no-unused-vars */

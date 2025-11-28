@@ -1,6 +1,5 @@
-
 /**
- * @module number
+ * @module Number
  */
 
 export * from "./bounds";

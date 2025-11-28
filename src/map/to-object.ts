@@ -2,17 +2,14 @@
  * @module Map
  */
 
-
 /**
- *Converts a Map (or ReadonlyMap) into a plain object whose properties correspond to the map’s keys and values.
- *If the map is empty, or if it yields no enumerable keys after conversion, null is returned instead of an empty object.
+ * Converts a Map (or ReadonlyMap) into a plain object whose properties correspond to the map’s keys and values. If the map is empty, or if it yields no enumerable keys after conversion, null is returned instead of an empty object.
  * @param this ReadonlyMap<K, V>
- * @returns A Record<PropertyKey, V> with the same key-value pairs as the map, or
- * null if:
- *the map is empty, or
- * the resulting object has no own enumerable keys.
+ * @returns A Record<PropertyKey, V> with the same key-value pairs as the map, on null if the map is empty, or the resulting object has no own enumerable keys.
+ *
+ * @since 1.0.0
+ * @author Ian Wenneckers
  */
-
 function toObject<K extends PropertyKey, V> (this: ReadonlyMap<K, V>): Record<PropertyKey, V> | null {
   if (this.size === 0)
     return null;
