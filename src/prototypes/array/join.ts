@@ -1,3 +1,14 @@
+/**
+ * @module Array
+ */
+
+/**
+ * Joins array elements into a string, automatically skipping null and undefined values.
+ * @param this Array of values
+ * @param separator The string to insert between array elements
+ * @returns A string with all non-nullish array elements joined by the separator.
+ */
+
 function nonNullishJoin (this: readonly unknown[], separator: string): string {
   let joined: string = "";
 
