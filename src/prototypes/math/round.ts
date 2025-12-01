@@ -8,6 +8,11 @@
  * @param value The number to round.
  * @param threshold  The fractional threshold at which rounding switches from floor to ceil.Typically between 0 and 1.
  * @returns The rounded integer result according to the provided threshold.
+ * @example
+ * ```ts
+ *  console.assert(Math.roundWithThreshold(1.5,0.3) === 2)
+ *  console.assert(Math.roundWithThreshold(1.2,0.3) === 1)
+ *  ```
  */
 
 function roundWithThreshold (value: number, threshold: number): number {

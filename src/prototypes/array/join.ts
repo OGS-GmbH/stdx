@@ -7,6 +7,12 @@
  * @param this Array of values
  * @param separator The string to insert between array elements
  * @returns A string with all non-nullish array elements joined by the separator.
+ * @example
+ * ```ts
+ *const array = [1, "a",undefined, "b", 3, , null];
+ *const joined = array.nonNullishJoin("-")
+ *console.assert(joined === "1-a-b-3-");
+ * ```
  */
 
 function nonNullishJoin (this: readonly unknown[], separator: string): string {

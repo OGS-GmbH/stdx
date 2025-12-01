@@ -9,6 +9,13 @@
  * @param min lower bound(inclusive)
  * @param max  upper bound (inclusive)
  * @returns A number that is guaranteed to be between min and max (inclusive), unless this coerces to NaN (see edge cases)
+ * @example
+ * ```ts
+ *  const boundedNumberMax = (100).ensureBounds(1, 50);
+ *  const boundedNumberMin = (0).ensureBounds(1,50);
+ *  console.assert(boundedNumberMax === 50);
+ *  console.assert(boundedNumberMin === 1);
+ *  ```
  */
 
 export function ensureBounds (this: number, min: number, max: number): number {

@@ -11,6 +11,26 @@
  * null if:
  *the map is empty, or
  * the resulting object has no own enumerable keys.
+ * @example
+ * ```ts
+ * const mapTest = new Map();
+ *
+ * const sym = Symbol()
+ *
+ * mapTest.set("name", "John");
+ * mapTest.set(1, 1);
+ * mapTest.set(sym, {test: "hello"});
+ *
+ * const object = mapTest.toObject();
+ *
+ * const expectedResult = {
+ *   "name": "John",
+ *    1: 1,
+ *    [sym]:{test : "hello" }
+ * }
+ *
+ *  console.assert(JSON.stringify(expectedResult) === JSON.stringify(object));
+ * ```
  */
 
 function toObject<K extends PropertyKey, V> (this: ReadonlyMap<K, V>): Record<PropertyKey, V> | null {
