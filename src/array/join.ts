@@ -1,3 +1,21 @@
+/**
+ * @module Array
+ */
+
+/**
+ * Joins array elements into a string, automatically skipping null and undefined values.
+ * @param this - Array instance
+ * @param separator - The string to insert between array elements
+ * @returns A string with all non-nullish array elements joined by the separator.
+ *
+ * @example
+ * const array = [1, "a", undefined, "b", 3,, null];
+ * const joined = array.nonNullishJoin(",");
+ * console.assert(joined === "1,a,b,3,");
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function nonNullishJoin (this: readonly unknown[], separator: string): string {
   let joined: string = "";
 

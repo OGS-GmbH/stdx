@@ -17,13 +17,6 @@ declare global {
   }
 
   interface Date {
-    /**
-     * @param isLocal Indicates whether the date should be returned in local time. If omitted, the date is returned in UTC.
-     * @returns date in ISO-8601 format (`YYYY-MM-DD`)
-     *
-     * @author Ian Wenneckers
-     * @since 1.1.0
-     */
     toISOStringDate(isLocal?: boolean): string;
   }
 
