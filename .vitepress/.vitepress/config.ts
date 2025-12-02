@@ -5,6 +5,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-i
 export default defineConfig({
   title: "stdx",
   description: "JavaScript/TypeScript Standard library",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "https://raw.githubusercontent.com/OGS-GmbH/.github/refs/heads/main/docs/logo-white.svg",
