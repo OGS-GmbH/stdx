@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: stdx
-  tagline: Typescript Standard library
+  text: Standard Library
+  tagline: Extended functionalities in both JavaScript and TypeScript.
   actions:
     - theme: brand
       text: Get started

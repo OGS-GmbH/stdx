@@ -58,7 +58,7 @@
     "ci:pr:lint:main:eslint": "eslint .",
     "commitizen": "cz",
     "prepare": "husky",
-    "vitepress:dev": "vitepress dev .vitepress",
+    "vitepress": "vitepress dev .vitepress",
     "vitepress:preview": "vitepress preview .vitepress"
   },
   "devDependencies": {

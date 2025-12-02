@@ -28,6 +28,7 @@ export default defineConfig(
   },
   {
     ignores: [
+      ".vitepress",
       ".angular",
       ".git",
       ".husky",

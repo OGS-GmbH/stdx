@@ -1,13 +1,16 @@
 /**
- * Clamps a number to ensure it stays within the provided [min, max] range`.
- * If the value is less than min, it returns min.
- * If the value is greater than max, it returns max.
- * Otherwise, it returns the value itself.
- * Internally it first coerces this into a number using Number(this).
- * @param this Number we want to keep in range
- * @param min lower bound(inclusive)
- * @param max  upper bound (inclusive)
- * @returns A number that is guaranteed to be between min and max (inclusive), unless this coerces to NaN (see edge cases)
+ * Clamps a `number` to ensure it stays within the provided [min, max] range`.
+ *
+ * @param this - `number` instance
+ * @param min - lower bound (inclusive)
+ * @param max - upper bound (inclusive)
+ * @returns `number` that is guaranteed to be between min and max (inclusive), unless this coerces to `NaN` (see edge cases)
+ *
+ * @example
+ * const boundedNumberMax = (100).ensureBounds(1, 50);
+ * const boundedNumberMin = (0).ensureBounds(1,50);
+ * console.assert(boundedNumberMax === 50);
+ * console.assert(boundedNumberMin === 1);
  *
  * @since 1.0.0
  * @author Simon Kovtyk

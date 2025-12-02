@@ -3,10 +3,15 @@
  */
 
 /**
- * Rounds a number to the nearest integer using a custom fractional threshold instead of the standard 0.5.
- * @param value The number to round.
- * @param threshold  The fractional threshold at which rounding switches from floor to ceil.Typically between 0 and 1.
+ * Rounds a `number` to the nearest integer using a custom fractional threshold instead of the standard 0.5.
+ *
+ * @param value - `number` to round.
+ * @param threshold - Fractional threshold at which rounding switches from floor to ceil. Typically between `0` and `1`.
  * @returns The rounded integer result according to the provided threshold.
+ *
+ * @example
+ * console.assert(Math.roundWithThreshold(1.5, 0.3) === 2)
+ * console.assert(Math.roundWithThreshold(1.2, 0.3) === 1)
  *
  * @since 1.0.0
  * @author Ian Wenneckers

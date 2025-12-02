@@ -3,9 +3,13 @@
  */
 
 /**
- * Converts the first character of a string to uppercase and returns the resulting string. All remaining characters are left unchanged.
- * @param this the string we want to capitalize
- * @returns A new string with the first character converted to uppercase. If the string is empty, an empty string is returned.
+ * Converts the first character of a `string` to uppercase and returns the resulting `string`. All remaining characters are left unchanged.
+ *
+ * @param this - string instance
+ * @returns A new `string` with the first character converted to uppercase. If the `string` is empty, an empty `string` is returned.
+ *
+ * @example
+ * console.assert("hello".capitalize() === "Hello");
  *
  * @since 1.0.0
  * @author Ian Wenneckers
