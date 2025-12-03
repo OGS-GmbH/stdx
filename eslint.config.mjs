@@ -28,7 +28,6 @@ export default defineConfig(
   },
   {
     ignores: [
-      ".vitepress",
       ".angular",
       ".git",
       ".husky",
@@ -37,8 +36,7 @@ export default defineConfig(
       "dist",
       "CHANGELOG.md",
       "README.md",
-      ".docs",
-      "CODE_OF_CONDUCT.md"
+      ".vitepress/.vitepress/cache"
     ]
   },
   {
@@ -47,7 +45,12 @@ export default defineConfig(
       parser: tseslint.parser,
       globals: globals.browser,
       parserOptions: {
-        project: [ "./tsconfig.json" ],
+        projectService: {
+          allowDefaultProject: [
+            ".vitepress/.vitepress/*",
+            ".vitepress/.vitepress/theme/*"
+          ]
+        },
         tsconfigRootDir: import.meta.dirname
       }
     },
@@ -59,6 +62,10 @@ export default defineConfig(
   },
   {
     files: [ "**/*.md" ],
+    language: "@markdown/commonmark",
+    languageOptions: {
+      frontmatter: "yaml"
+    },
     rules: ESLINT_MARKDOWN_RULES
   },
   {

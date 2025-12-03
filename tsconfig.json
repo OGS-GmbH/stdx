@@ -1,5 +1,7 @@
 {
-  "include": ["./src/**/*.ts","./.vitepress/.vitepress/config.ts"],
+  "include": [
+    "./src/**/*.ts"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "module": "esnext",
