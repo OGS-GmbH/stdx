@@ -58,7 +58,7 @@ export default defineConfig({
   ],
   base: "/stdx/",
   srcDir: "../dist/typedoc",
-  outDir: "../dist/vitepress",
+  outDir: "../dist/docs",
   titleTemplate: ":title - OGS stdx",
   cleanUrls: true,
   appearance: "dark",
